@@ -10,5 +10,6 @@ urlpatterns = [
     path("", lambda request : redirect("/gis/")),
     path("admin/", admin.site.urls, name="admin"),
     path("jsreverse/", django_js_reverse.views.urls_js, name="js_reverse"),
-    path("gis/", include("main.urls"), name="main"),
+    path("gis/", include("main.urls"), name="main",),
+    path("connect7/", include("connect7.urls"), name="connect7")
 ]

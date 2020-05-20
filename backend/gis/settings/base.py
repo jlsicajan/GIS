@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "common",
     "users",
     "main",
+    "connect7",
 ]
 
 MIDDLEWARE = [

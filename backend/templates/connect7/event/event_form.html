@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="row mt-5 mb-5">
+  <div class="col-md-3">
+    <h2><strong>New Event</strong></h2>
+  </div>
+  <div class="col-md-6">
+
+    <form method="post">{% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Save">
+    </form>
+  </div>
+</div>
+{% endblock %}

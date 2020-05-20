@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="row mt-5">
+  <div class="col-md-6">
+    <h3>Events</h3>
+  </div>
+
+  <div class="col-md-16">
+    <a href="{% url 'connect7:event-add' %}" class="btn btn-success">Create Event</a>
+  </div>
+
+  <div class="col-md-12">
+    {% if event_list %}
+    <p>List of events available:</p>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Location</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for event in event_list %}
+      <tr>
+        <th scope="row"><a href="{% url 'connect7:detail' event.event_id %}">{{ event.event_name }}</a></th>
+        <td>{{ event.location }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p>No events are available.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
