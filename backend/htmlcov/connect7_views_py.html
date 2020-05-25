@@ -112,7 +112,7 @@
     <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t"><span class="key">class</span> <span class="nam">EventView</span><span class="op">(</span><span class="nam">FormView</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="nam">template_name</span> <span class="op">=</span> <span class="str">'connect7/event/event.html'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t61" class="run"><span class="n"><a href="#t61">61</a></span><span class="t">    <span class="nam">form_class</span> <span class="op">=</span> <span class="nam">EventForm</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t62" class="run"><span class="n"><a href="#t62">62</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="str">'/thanks/'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t62" class="run"><span class="n"><a href="#t62">62</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="str">'../connect7/'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="pln"><span class="n"><a href="#t63">63</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t64" class="run"><span class="n"><a href="#t64">64</a></span><span class="t">    <span class="key">def</span> <span class="nam">form_valid</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">form</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t65" class="pln"><span class="n"><a href="#t65">65</a></span><span class="t">        <span class="com"># This method is called when valid form data has been POSTed.</span>&nbsp;</span><span class="r"></span></p>
@@ -123,7 +123,7 @@
     <p id="t70" class="run"><span class="n"><a href="#t70">70</a></span><span class="t"><span class="key">class</span> <span class="nam">EventCreate</span><span class="op">(</span><span class="nam">CreateView</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t71" class="run"><span class="n"><a href="#t71">71</a></span><span class="t">    <span class="nam">template_name</span> <span class="op">=</span> <span class="str">'connect7/event/event_form.html'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t72" class="run"><span class="n"><a href="#t72">72</a></span><span class="t">    <span class="nam">form_class</span> <span class="op">=</span> <span class="nam">EventForm</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="nam">reverse_lazy</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="str">'../connect7/'</span>&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="pln"><span class="n"><a href="#t74">74</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t75" class="pln"><span class="n"><a href="#t75">75</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t76" class="run"><span class="n"><a href="#t76">76</a></span><span class="t"><span class="key">class</span> <span class="nam">EventUpdate</span><span class="op">(</span><span class="nam">UpdateView</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -133,13 +133,13 @@
     <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t81" class="run"><span class="n"><a href="#t81">81</a></span><span class="t"><span class="key">class</span> <span class="nam">EventDelete</span><span class="op">(</span><span class="nam">DeleteView</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="run"><span class="n"><a href="#t82">82</a></span><span class="t">    <span class="nam">model</span> <span class="op">=</span> <span class="nam">Event</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t83" class="run"><span class="n"><a href="#t83">83</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="nam">reverse_lazy</span><span class="op">(</span><span class="str">'index'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t83" class="run"><span class="n"><a href="#t83">83</a></span><span class="t">    <span class="nam">success_url</span> <span class="op">=</span> <span class="str">'../connect7/'</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.1</a>,
-            created at 2020-05-20 18:51
+            created at 2020-05-20 19:48
         </p>
     </div>
 </div>

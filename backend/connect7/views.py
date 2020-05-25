@@ -59,7 +59,7 @@ def create_event(request):
 class EventView(FormView):
     template_name = 'connect7/event/event.html'
     form_class = EventForm
-    success_url = '/thanks/'
+    success_url = '../connect7/'
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
@@ -70,7 +70,7 @@ class EventView(FormView):
 class EventCreate(CreateView):
     template_name = 'connect7/event/event_form.html'
     form_class = EventForm
-    success_url = reverse_lazy('index')
+    success_url = '../connect7/'
 
 
 class EventUpdate(UpdateView):
@@ -80,4 +80,4 @@ class EventUpdate(UpdateView):
 
 class EventDelete(DeleteView):
     model = Event
-    success_url = reverse_lazy('index')
+    success_url = '../connect7/'
